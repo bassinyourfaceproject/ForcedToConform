@@ -10,21 +10,21 @@ import '../styles/common.css';
 import '../styles/base.css';
 
 class App extends React.Component {
-  render() {
-    return (
-        <>
-            <BrowserRouter>
-            <Header />
-            <div id="body" class='container'>
-            <Route exact path="/" component={Home} />
-            <Route path="/gallery" component={Gallery} />
-            <Route path="/blog/" component={Blog} />
-            <Route path="/contact/" component={Contact} />
-            </div>
-            <Footer />
-            </BrowserRouter>
-        </>
-    );
-  }
+	render() {
+		return (
+			<>
+				<BrowserRouter>
+					<Header />
+					<div id="body" className="container content-padding-top">
+						<Route exact path="/" component={Home} />
+						<Route path="/gallery" component={Gallery} />
+						<Route path="/blog/" component={Blog} />
+						<Route path="/contact/" component={Contact} />
+					</div>
+					<Footer />
+				</BrowserRouter>
+			</>
+		);
+	}
 }
 export default App;

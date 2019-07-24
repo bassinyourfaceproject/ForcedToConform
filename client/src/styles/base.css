@@ -7,7 +7,7 @@
 	color: #fff;
 	display: inline;
 	font-family: poller_oneregular;
-	font-size: 35px;
+	font-size: 3rem;
 	font-weight: normal;
 	margin: 0;
 	padding: 0;
@@ -21,10 +21,10 @@
 .home .container > div {
 	margin: 0 auto;
 	padding: 0;
-	width: 960px;
+	/* width: 960px; */
 }
 .home .container > div img {
-	border: 2px solid #292929;
+	/* border: 2px solid #292929; */
 	margin: 24px 0 0;
 	padding: 0;
 }
@@ -34,7 +34,7 @@
 	width: 560px;
 }
 .home .container > div .article h2 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -49,7 +49,7 @@
 	background: #252525;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -74,7 +74,6 @@
 
 .gallery .container {
 	margin: 0;
-	padding: 0 0 30px;
 	text-align: center;
 }
 .gallery .container h1 {
@@ -141,7 +140,7 @@
 }
 .gallery .container div ul li div h3 {
 	color: #252525;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0;
@@ -155,7 +154,7 @@
 	background: #000;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
@@ -198,7 +197,7 @@
 	display: block;
 	margin: 0;
 	padding: 0;
-	opacity: .8;
+	opacity: 0.8;
 	transition: 0.5s ease-in-out;
 }
 .gallery .container > ul li a:hover img {
@@ -241,7 +240,7 @@
 	width: 560px;
 }
 .blog .container > div .article h2 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -256,7 +255,7 @@
 	background: #252525;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
@@ -296,15 +295,15 @@
 .blog .container div ul li .figure:hover img {
 	opacity: 1;
 }
-.blog .container div ul li div {
+/* .blog .container div ul li div {
 	float: left;
 	margin: 0;
 	padding: 63px 0 20px;
 	width: 558px;
-}
+} */
 .blog .container div ul li div h3 {
 	color: #252525;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0;
@@ -318,7 +317,7 @@
 	background: #000;
 	color: #fff;
 	display: inline-block;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 18px;
 	font-weight: normal;
 	margin: 0;
@@ -417,7 +416,7 @@
 	display: block;
 	margin: 0;
 	padding: 0;
-	opacity: .8;
+	opacity: 0.8;
 	transition: 0.5s ease-in-out;
 }
 .blog .container > ul li a:hover img {
@@ -433,7 +432,8 @@
 	padding: 24px 0 0;
 	width: 620px;
 }
-.contact .container form input, .contact .container form textarea {
+.contact .container form input,
+.contact .container form textarea {
 	border: 2px solid #252525;
 	color: #252525;
 	font-family: Arial, Helvetica, sans-serif;
@@ -453,7 +453,7 @@
 .contact .container form #send {
 	background: #252525;
 	color: #fff;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: 'Arial Black', Gadget, sans-serif;
 	font-size: 15px;
 	font-weight: normal;
 	display: inline-block;
@@ -466,516 +466,600 @@
 	cursor: pointer;
 }
 
-
 @media screen and (max-width: 768px) {
-    .home .container h1 {
-        display: block;
-        font-size: 20px;
-        margin: 0 auto;
-        width: 90%;
-    }
-    .home .container h1 span {
-        display: block;
-        padding: 3%;
-        width: 94%;
-    }
-    .home .container > div {
-        padding: 0 5%;
-        width: 90%;
-    }
-    .home .container > div img {
-        margin: 24px 0 30px;
-        width: 98%
-    }
-    .home .container > div .article {
-        padding: 0;
-        width: 100%;
-    }
-    .home .container > div .article h2, .home .container > div .article h4 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .home .container #featured {
-        overflow: hidden;
-        margin: 0 0 20px
-    }
-    .home .container #featured img {
-        min-width: 960px;
-    }
-    .home .container #featured div {
-        left: 0;
-        margin: 0;
-        padding: 0 2%;
-        position: absolute;
-        top: 0;
-        text-align: left;
-        width: 96%;
-    }
-    .home .container #featured div h2 {
-        font-size: 14px;
-        font-weight: normal;
-        margin: 50px 0 10px;
-        padding: 8px 5px;
-    }
-    .home .container #featured div span {
-        display: block;
-        font-size: 14px;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    .home .container #featured div a {
-        font-size: 14px;
-        margin: 5px 0 0;
-        padding: 10px;
-    }
-    .home .container > ul {
-        overflow: visible;
-        padding: 0 5%;
-        width: 90%;
-    }
-    .home .container ul.gallery {
-        padding: 5% 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    .home .container > ul li {
-        float: none;
-        margin: 0;
-        width: 100%;
-    }
-    .home .container ul.gallery li {
-        float: left;
-        margin: 0 0 5% 5%;
-        width: 42%;
-    }
-    .home .container > ul li a img {
-        width: 98%;
-    }
-    .home .container > ul li a span {
-        padding: 15px 0;
-    }
-    .home .container div ul {
-        margin: 0;
-        padding: 20px 0 0;
-        width: 100%;
-    }
-    .home .container div ul li {
-        overflow: visible;
-        padding: 0 0 20px;
-        width: 99%;
-    }
-    .home .container div ul li .figure {
-        border: 0;
-        display: block;
-        float: none;
-        margin: 0 0 20px;
-        width: 100%;
-    }
-    .home .container div ul li .figure img {
-        width: 100%;
-    }
-    .home .container div ul li div {
-        float: none;
-        padding: 0;
-        width: 100%;
-    }
-    .home .container div ul li div a.more:hover {
-        height: 14px;
-        line-height: 14px;
-    }
-    .home .container form {
-        width: 100%;
-    }
-    .home .container form input, .home .container form textarea {
-        margin: 0 0 20px;
-        padding: 10px;
-        width: 84%;
-    }
-    .home .container form #send {
-        padding: 10px;
-    }
+	.home .container h1 {
+		display: block;
+		font-size: 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.home .container h1 span {
+		display: block;
+		padding: 3%;
+		width: 94%;
+	}
+	.home .container > div {
+		padding: 0 5%;
+		width: 90%;
+	}
+	.home .container > div img {
+		margin: 24px 0 30px;
+		width: 98%;
+	}
+	.home .container > div .article {
+		padding: 0;
+		width: 100%;
+	}
+	.home .container > div .article h2,
+	.home .container > div .article h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.home .container #featured {
+		overflow: hidden;
+		margin: 0 0 20px;
+	}
+	.home .container #featured img {
+		min-width: 960px;
+	}
+	.home .container #featured div {
+		left: 0;
+		margin: 0;
+		padding: 0 2%;
+		position: absolute;
+		top: 0;
+		text-align: left;
+		width: 96%;
+	}
+	.home .container #featured div h2 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 50px 0 10px;
+		padding: 8px 5px;
+	}
+	.home .container #featured div span {
+		display: block;
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 10px;
+	}
+	.home .container #featured div a {
+		font-size: 14px;
+		margin: 5px 0 0;
+		padding: 10px;
+	}
+	.home .container > ul {
+		overflow: visible;
+		padding: 0 5%;
+		width: 90%;
+	}
+	.home .container ul.gallery {
+		padding: 5% 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	.home .container > ul li {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.home .container ul.gallery li {
+		float: left;
+		margin: 0 0 5% 5%;
+		width: 42%;
+	}
+	.home .container > ul li a img {
+		width: 98%;
+	}
+	.home .container > ul li a span {
+		padding: 15px 0;
+	}
+	.home .container div ul {
+		margin: 0;
+		padding: 20px 0 0;
+		width: 100%;
+	}
+	.home .container div ul li {
+		overflow: visible;
+		padding: 0 0 20px;
+		width: 99%;
+	}
+	.home .container div ul li .figure {
+		border: 0;
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+		width: 100%;
+	}
+	.home .container div ul li .figure img {
+		width: 100%;
+	}
+	.home .container div ul li div {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.home .container div ul li div a.more:hover {
+		height: 14px;
+		line-height: 14px;
+	}
+	.home .container form {
+		width: 100%;
+	}
+	.home .container form input,
+	.home .container form textarea {
+		margin: 0 0 20px;
+		padding: 10px;
+		width: 84%;
+	}
+	.home .container form #send {
+		padding: 10px;
+	}
 
-
-    .gallery .container {
-        width: 100%;
-    }
-    .gallery .container h1 {
-        display: block;
-        font-size: 20px;
-        margin: 0 auto;
-        width: 90%;
-    }
-    .gallery .container h1 span {
-        display: block;
-        padding: 3%;
-        width: 94%;
-    }
-    .gallery .container > div {
-        padding: 0 5%;
-        width: 90%;
-    }
-    .gallery .container > div img {
-        margin: 24px 0 30px;
-        width: 98%
-    }
-    .gallery .container > div .article {
-        padding: 0;
-        width: 100%;
-    }
-    .gallery .container > div .article h2, .gallery .container > div .article h4 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .gallery .container #featured {
-        overflow: hidden;
-        margin: 0 0 20px
-    }
-    .gallery .container #featured img {
-        min-width: 960px;
-    }
-    .gallery .container #featured div {
-        left: 0;
-        margin: 0;
-        padding: 0 2%;
-        position: absolute;
-        top: 0;
-        text-align: left;
-        width: 96%;
-    }
-    .gallery .container #featured div h2 {
-        font-size: 14px;
-        font-weight: normal;
-        margin: 50px 0 10px;
-        padding: 8px 5px;
-    }
-    .gallery .container #featured div span {
-        display: block;
-        font-size: 14px;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    .gallery .container #featured div a {
-        font-size: 14px;
-        margin: 5px 0 0;
-        padding: 10px;
-    }
-    .gallery .container > ul {
-        overflow: visible;
-        padding: 0 5%;
-        width: 90%;
-    }
-    .gallery .container ul.gallery .container {
-        padding: 5% 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    .gallery .container > ul li {
-        float: none;
-        margin: 0;
-        width: 100%;
-    }
-    .gallery .container ul.gallery .container li {
-        float: left;
-        margin: 0 0 5% 5%;
-        width: 42%;
-    }
-    .gallery .container > ul li a img {
-        width: 98%;
-    }
-    .gallery .container > ul li a span {
-        padding: 15px 0;
-    }
-    .gallery .container div ul {
-        margin: 0;
-        padding: 20px 0 0;
-        width: 100%;
-    }
-    .gallery .container div ul li {
-        overflow: visible;
-        padding: 0 0 20px;
-        width: 99%;
-    }
-    .gallery .container div ul li .figure {
-        border: 0;
-        display: block;
-        float: none;
-        margin: 0 0 20px;
-        width: 100%;
-    }
-    .gallery .container div ul li .figure img {
-        width: 100%;
-    }
-    .gallery .container div ul li div {
-        float: none;
-        padding: 0;
-        width: 100%;
-    }
-    .gallery .container div ul li div a.more:hover {
-        height: 14px;
-        line-height: 14px;
-    }
-    .gallery .container form {
-        width: 100%;
-    }
-    .gallery .container form input, .gallery .container form textarea {
-        margin: 0 0 20px;
-        padding: 10px;
-        width: 84%;
-    }
-    .gallery .container form #send {
-        padding: 10px;
-    }
-    .blog .container h1 {
-        display: block;
-        font-size: 20px;
-        margin: 0 auto;
-        width: 90%;
-    }
-    .blog .container h1 span {
-        display: block;
-        padding: 3%;
-        width: 94%;
-    }
-    .blog .container > div {
-        padding: 0 5%;
-        width: 90%;
-    }
-    .blog .container > div img {
-        margin: 24px 0 30px;
-        width: 98%
-    }
-    .blog .container > div .article {
-        padding: 0;
-        width: 100%;
-    }
-    .blog .container > div .article h2, .blog .container > div .article h4 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .blog .container #featured {
-        overflow: hidden;
-        margin: 0 0 20px
-    }
-    .blog .container #featured img {
-        min-width: 960px;
-    }
-    .blog .container #featured div {
-        left: 0;
-        margin: 0;
-        padding: 0 2%;
-        position: absolute;
-        top: 0;
-        text-align: left;
-        width: 96%;
-    }
-    .blog .container #featured div h2 {
-        font-size: 14px;
-        font-weight: normal;
-        margin: 50px 0 10px;
-        padding: 8px 5px;
-    }
-    .blog .container #featured div span {
-        display: block;
-        font-size: 14px;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    .blog .container #featured div a {
-        font-size: 14px;
-        margin: 5px 0 0;
-        padding: 10px;
-    }
-    .blog .container > ul {
-        overflow: visible;
-        padding: 0 5%;
-        width: 90%;
-    }
-    .blog .container ul.gallery {
-        padding: 5% 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    .blog .container > ul li {
-        float: none;
-        margin: 0;
-        width: 100%;
-    }
-    .blog .container ul.gallery li {
-        float: left;
-        margin: 0 0 5% 5%;
-        width: 42%;
-    }
-    .blog .container > ul li a img {
-        width: 98%;
-    }
-    .blog .container > ul li a span {
-        padding: 15px 0;
-    }
-    .blog .container div ul {
-        margin: 0;
-        padding: 20px 0 0;
-        width: 100%;
-    }
-    .blog .container div ul li {
-        overflow: visible;
-        padding: 0 0 20px;
-        width: 99%;
-    }
-    .blog .container div ul li .figure {
-        border: 0;
-        display: block;
-        float: none;
-        margin: 0 0 20px;
-        width: 100%;
-    }
-    .blog .container div ul li .figure img {
-        width: 100%;
-    }
-    .blog .container div ul li div {
-        float: none;
-        padding: 0;
-        width: 100%;
-    }
-    .blog .container div ul li div a.more:hover {
-        height: 14px;
-        line-height: 14px;
-    }
-    .blog .container form {
-        width: 100%;
-    }
-    .blog .container form input, .blog .container form textarea {
-        margin: 0 0 20px;
-        padding: 10px;
-        width: 84%;
-    }
-    .blog .container form #send {
-        padding: 10px;
-    }
-    .contact .container h1 {
-        display: block;
-        font-size: 20px;
-        margin: 0 auto;
-        width: 90%;
-    }
-    .contact .container h1 span {
-        display: block;
-        padding: 3%;
-        width: 94%;
-    }
-    .contact .container > div {
-        padding: 0 5%;
-        width: 90%;
-    }
-    .contact .container > div img {
-        margin: 24px 0 30px;
-        width: 98%
-    }
-    .contact .container > div .article {
-        padding: 0;
-        width: 100%;
-    }
-    .contact .container > div .article h2, .contact .container > div .article h4 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-    .contact .container #featured {
-        overflow: hidden;
-        margin: 0 0 20px
-    }
-    .contact .container #featured img {
-        min-width: 960px;
-    }
-    .contact .container #featured div {
-        left: 0;
-        margin: 0;
-        padding: 0 2%;
-        position: absolute;
-        top: 0;
-        text-align: left;
-        width: 96%;
-    }
-    .contact .container #featured div h2 {
-        font-size: 14px;
-        font-weight: normal;
-        margin: 50px 0 10px;
-        padding: 8px 5px;
-    }
-    .contact .container #featured div span {
-        display: block;
-        font-size: 14px;
-        margin: 10px 0;
-        padding: 10px;
-    }
-    .contact .container #featured div a {
-        font-size: 14px;
-        margin: 5px 0 0;
-        padding: 10px;
-    }
-    .contact .container > ul {
-        overflow: visible;
-        padding: 0 5%;
-        width: 90%;
-    }
-    .contact .container ul.gallery {
-        padding: 5% 0;
-        overflow: hidden;
-        width: 100%;
-    }
-    .contact .container > ul li {
-        float: none;
-        margin: 0;
-        width: 100%;
-    }
-    .contact .container ul.gallery li {
-        float: left;
-        margin: 0 0 5% 5%;
-        width: 42%;
-    }
-    .contact .container > ul li a img {
-        width: 98%;
-    }
-    .contact .container > ul li a span {
-        padding: 15px 0;
-    }
-    .contact .container div ul {
-        margin: 0;
-        padding: 20px 0 0;
-        width: 100%;
-    }
-    .contact .container div ul li {
-        overflow: visible;
-        padding: 0 0 20px;
-        width: 99%;
-    }
-    .contact .container div ul li .figure {
-        border: 0;
-        display: block;
-        float: none;
-        margin: 0 0 20px;
-        width: 100%;
-    }
-    .contact .container div ul li .figure img {
-        width: 100%;
-    }
-    .contact .container div ul li div {
-        float: none;
-        padding: 0;
-        width: 100%;
-    }
-    .contact .container div ul li div a.more:hover {
-        height: 14px;
-        line-height: 14px;
-    }
-    .contact .container form {
-        width: 100%;
-    }
-    .contact .container form input, .contact .container form textarea {
-        margin: 0 0 20px;
-        padding: 10px;
-        width: 84%;
-    }
-    .contact .container form #send {
-        padding: 10px;
-    }
+	.gallery .container {
+		width: 100%;
+	}
+	.gallery .container h1 {
+		display: block;
+		font-size: 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.gallery .container h1 span {
+		display: block;
+		padding: 3%;
+		width: 94%;
+	}
+	.gallery .container > div {
+		padding: 0 5%;
+		width: 90%;
+	}
+	.gallery .container > div img {
+		margin: 24px 0 30px;
+		width: 98%;
+	}
+	.gallery .container > div .article {
+		padding: 0;
+		width: 100%;
+	}
+	.gallery .container > div .article h2,
+	.gallery .container > div .article h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.gallery .container #featured {
+		overflow: hidden;
+		margin: 0 0 20px;
+	}
+	.gallery .container #featured img {
+		min-width: 960px;
+	}
+	.gallery .container #featured div {
+		left: 0;
+		margin: 0;
+		padding: 0 2%;
+		position: absolute;
+		top: 0;
+		text-align: left;
+		width: 96%;
+	}
+	.gallery .container #featured div h2 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 50px 0 10px;
+		padding: 8px 5px;
+	}
+	.gallery .container #featured div span {
+		display: block;
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 10px;
+	}
+	.gallery .container #featured div a {
+		font-size: 14px;
+		margin: 5px 0 0;
+		padding: 10px;
+	}
+	.gallery .container > ul {
+		overflow: visible;
+		padding: 0 5%;
+		width: 90%;
+	}
+	.gallery .container ul.gallery .container {
+		padding: 5% 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	.gallery .container > ul li {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.gallery .container ul.gallery .container li {
+		float: left;
+		margin: 0 0 5% 5%;
+		width: 42%;
+	}
+	.gallery .container > ul li a img {
+		width: 98%;
+	}
+	.gallery .container > ul li a span {
+		padding: 15px 0;
+	}
+	.gallery .container div ul {
+		margin: 0;
+		padding: 20px 0 0;
+		width: 100%;
+	}
+	.gallery .container div ul li {
+		overflow: visible;
+		padding: 0 0 20px;
+		width: 99%;
+	}
+	.gallery .container div ul li .figure {
+		border: 0;
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+		width: 100%;
+	}
+	.gallery .container div ul li .figure img {
+		width: 100%;
+	}
+	.gallery .container div ul li div {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.gallery .container div ul li div a.more:hover {
+		height: 14px;
+		line-height: 14px;
+	}
+	.gallery .container form {
+		width: 100%;
+	}
+	.gallery .container form input,
+	.gallery .container form textarea {
+		margin: 0 0 20px;
+		padding: 10px;
+		width: 84%;
+	}
+	.gallery .container form #send {
+		padding: 10px;
+	}
+	.blog .container h1 {
+		display: block;
+		font-size: 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.blog .container h1 span {
+		display: block;
+		padding: 3%;
+		width: 94%;
+	}
+	.blog .container > div {
+		padding: 0 5%;
+		width: 90%;
+	}
+	.blog .container > div img {
+		margin: 24px 0 30px;
+		width: 98%;
+	}
+	.blog .container > div .article {
+		padding: 0;
+		width: 100%;
+	}
+	.blog .container > div .article h2,
+	.blog .container > div .article h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.blog .container #featured {
+		overflow: hidden;
+		margin: 0 0 20px;
+	}
+	.blog .container #featured img {
+		min-width: 960px;
+	}
+	.blog .container #featured div {
+		left: 0;
+		margin: 0;
+		padding: 0 2%;
+		position: absolute;
+		top: 0;
+		text-align: left;
+		width: 96%;
+	}
+	.blog .container #featured div h2 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 50px 0 10px;
+		padding: 8px 5px;
+	}
+	.blog .container #featured div span {
+		display: block;
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 10px;
+	}
+	.blog .container #featured div a {
+		font-size: 14px;
+		margin: 5px 0 0;
+		padding: 10px;
+	}
+	.blog .container > ul {
+		overflow: visible;
+		padding: 0 5%;
+		width: 90%;
+	}
+	.blog .container ul.gallery {
+		padding: 5% 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	.blog .container > ul li {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.blog .container ul.gallery li {
+		float: left;
+		margin: 0 0 5% 5%;
+		width: 42%;
+	}
+	.blog .container > ul li a img {
+		width: 98%;
+	}
+	.blog .container > ul li a span {
+		padding: 15px 0;
+	}
+	.blog .container div ul {
+		margin: 0;
+		padding: 20px 0 0;
+		width: 100%;
+	}
+	.blog .container div ul li {
+		overflow: visible;
+		padding: 0 0 20px;
+		width: 99%;
+	}
+	.blog .container div ul li .figure {
+		border: 0;
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+		width: 100%;
+	}
+	.blog .container div ul li .figure img {
+		width: 100%;
+	}
+	.blog .container div ul li div {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.blog .container div ul li div a.more:hover {
+		height: 14px;
+		line-height: 14px;
+	}
+	.blog .container form {
+		width: 100%;
+	}
+	.blog .container form input,
+	.blog .container form textarea {
+		margin: 0 0 20px;
+		padding: 10px;
+		width: 84%;
+	}
+	.blog .container form #send {
+		padding: 10px;
+	}
+	.contact .container h1 {
+		display: block;
+		font-size: 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.contact .container h1 span {
+		display: block;
+		padding: 3%;
+		width: 94%;
+	}
+	.contact .container > div {
+		padding: 0 5%;
+		width: 90%;
+	}
+	.contact .container > div img {
+		margin: 24px 0 30px;
+		width: 98%;
+	}
+	.contact .container > div .article {
+		padding: 0;
+		width: 100%;
+	}
+	.contact .container > div .article h2,
+	.contact .container > div .article h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.contact .container #featured {
+		overflow: hidden;
+		margin: 0 0 20px;
+	}
+	.contact .container #featured img {
+		min-width: 960px;
+	}
+	.contact .container #featured div {
+		left: 0;
+		margin: 0;
+		padding: 0 2%;
+		position: absolute;
+		top: 0;
+		text-align: left;
+		width: 96%;
+	}
+	.contact .container #featured div h2 {
+		font-size: 14px;
+		font-weight: normal;
+		margin: 50px 0 10px;
+		padding: 8px 5px;
+	}
+	.contact .container #featured div span {
+		display: block;
+		font-size: 14px;
+		margin: 10px 0;
+		padding: 10px;
+	}
+	.contact .container #featured div a {
+		font-size: 14px;
+		margin: 5px 0 0;
+		padding: 10px;
+	}
+	.contact .container > ul {
+		overflow: visible;
+		padding: 0 5%;
+		width: 90%;
+	}
+	.contact .container ul.gallery {
+		padding: 5% 0;
+		overflow: hidden;
+		width: 100%;
+	}
+	.contact .container > ul li {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	.contact .container ul.gallery li {
+		float: left;
+		margin: 0 0 5% 5%;
+		width: 42%;
+	}
+	.contact .container > ul li a img {
+		width: 98%;
+	}
+	.contact .container > ul li a span {
+		padding: 15px 0;
+	}
+	.contact .container div ul {
+		margin: 0;
+		padding: 20px 0 0;
+		width: 100%;
+	}
+	.contact .container div ul li {
+		overflow: visible;
+		padding: 0 0 20px;
+		width: 99%;
+	}
+	.contact .container div ul li .figure {
+		border: 0;
+		display: block;
+		float: none;
+		margin: 0 0 20px;
+		width: 100%;
+	}
+	.contact .container div ul li .figure img {
+		width: 100%;
+	}
+	.contact .container div ul li div {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.contact .container div ul li div a.more:hover {
+		height: 14px;
+		line-height: 14px;
+	}
+	.contact .container form {
+		width: 100%;
+	}
+	.contact .container form input,
+	.contact .container form textarea {
+		margin: 0 0 20px;
+		padding: 10px;
+		width: 84%;
+	}
+	.contact .container form #send {
+		padding: 10px;
+	}
 }
 
+/* ------------------------------------------ */
+
+section {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.content-padding {
+	padding-bottom: 150px;
+}
+
+.section-title {
+	font-size: 2rem;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-child {
+	width: 50%;
+	height: 600px;
+}
+
+.flex-child img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 50% 24%;
+}
+
+.introduction {
+	text-align: left;
+}
+
+.image-wrapper {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.image-wrapper .image {
+	width: 100%;
+	height: 100%;
+	margin: 0 !important;
+}
+
+.main-title {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Blog.js-------------------------------------------- */
+.blog-thumbnail {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	padding: 10px;
+	float: left;
+}
+
+.blog-thumbnail img {
+	width: 100%;
+	height: 100%;
+}
+
+.blog-details {
+	padding-top: 20px;
+	float: right;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
