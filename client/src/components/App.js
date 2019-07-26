@@ -3,7 +3,7 @@ import Home from './Home';
 import Gallery from './Gallery';
 import Blog from './Blog';
 import Contact from './Contact';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import '../styles/common.css';

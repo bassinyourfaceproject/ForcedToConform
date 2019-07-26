@@ -1,30 +1,57 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import ShowGallery from './ShowGallery';
 
 class Gallery extends React.Component {
 	componentDidMount() {
-		document.querySelector('body').className = 'gallery'
+		document.querySelector('body').className = 'gallery';
 	}
 	componentWillUnmount() {
 		document.querySelector('body').className = '';
 	}
-render() {
-return (
-	<>
-		<h1><span>gallery</span></h1>
-		<ul class='gallery'>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache1.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache2.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache3.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache4.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache5.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache6.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache7.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache8.jpg' alt=''/></a></li>
-			<li><a href='gallery-single-post.html'><img src='images/gallery/mustache9.jpg' alt=''/></a></li>
-		</ul>
-	</>
 
-    );
+	renderMedias = () => {
+		if (this.props.medias === null) {
+			return <div>Loading...</div>;
+		}
+		return this.props.medias.map(media => {
+			return (
+				<li className="gallery-media">
+					<button className="ui button primary">{media}</button>
+				</li>
+			);
+		});
+	};
+
+	render() {
+		return (
+			<>
+				<div>
+					{/* <section> */}
+					<div className="image-wrapper content-padding">
+						<img
+							className="image"
+							src={`${process.env.PUBLIC_URL}/images/photographer.jpg`}
+							alt="sample image"
+						/>
+						<h2 className="main-title">Gallery</h2>
+					</div>
+					<h2>
+						<span>Media</span>
+					</h2>
+					<ul className="gallery">{this.renderMedias()}</ul>
+					<ShowGallery />
+				</div>
+			</>
+		);
+	}
 }
-}
-export default Gallery;
+
+const mapToStateProps = state => {
+	console.log(state.medias);
+	return {
+		medias: state.medias
+	};
+};
+
+export default connect(mapToStateProps)(Gallery);

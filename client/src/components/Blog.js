@@ -17,7 +17,6 @@ class Blog extends React.Component {
 			return <div>Loading</div>;
 		}
 		return this.props.blogs.map(blog => {
-			console.log(blog);
 			return (
 				<li>
 					<div className="blog-thumbnail">
@@ -53,7 +52,6 @@ class Blog extends React.Component {
 }
 
 const mapToStateProps = (state, ownProps) => {
-	console.log(state, ownProps);
 	return {
 		blogs: Object.values(state.blogs)
 	};
