@@ -20,7 +20,7 @@ class Blog extends React.Component {
 			return (
 				<li>
 					<div className="blog-thumbnail">
-						<img src={blog.acf.image.url} />
+						<img src={blog.acf.image.url} alt={blog.acf.title} />
 					</div>
 					<div className="blog-details">
 						<h3>{blog.acf.title}</h3>

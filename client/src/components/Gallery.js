@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { selectMedia } from '../actions';
 import ShowGallery from './ShowGallery';
 
 class Gallery extends React.Component {
@@ -16,8 +17,13 @@ class Gallery extends React.Component {
 		}
 		return this.props.medias.map(media => {
 			return (
-				<li className="gallery-media">
-					<button className="ui button primary">{media}</button>
+				<li key={media.id} className="gallery-media">
+					<button
+						onClick={() => this.props.selectMedia(media)}
+						className="ui button primary"
+					>
+						{media}
+					</button>
 				</li>
 			);
 		});
@@ -32,7 +38,7 @@ class Gallery extends React.Component {
 						<img
 							className="image"
 							src={`${process.env.PUBLIC_URL}/images/photographer.jpg`}
-							alt="sample image"
+							alt="sample"
 						/>
 						<h2 className="main-title">Gallery</h2>
 					</div>
@@ -48,10 +54,14 @@ class Gallery extends React.Component {
 }
 
 const mapToStateProps = state => {
-	console.log(state.medias);
+	// console.log(state.selectedMedia);
 	return {
-		medias: state.medias
+		medias: state.medias,
+		selectedMedia: state.selectedMedia
 	};
 };
 
-export default connect(mapToStateProps)(Gallery);
+export default connect(
+	mapToStateProps,
+	{ selectMedia }
+)(Gallery);

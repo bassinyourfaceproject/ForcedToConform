@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class Home extends React.Component {
 	componentDidMount() {
@@ -18,7 +18,7 @@ class Home extends React.Component {
 						<img
 							className="image"
 							src={`${process.env.PUBLIC_URL}/images/sampleImage.jpg`}
-							alt="sample image"
+							alt="Top-page"
 						/>
 						<h1 className="main-title">Forced To Conform</h1>
 					</div>
@@ -40,7 +40,7 @@ class Home extends React.Component {
 							<div className="flex-child">
 								<img
 									src={`${process.env.PUBLIC_URL}/images/keithSample.jpg`}
-									alt="sample image"
+									alt="sample"
 								/>
 							</div>
 						</div>

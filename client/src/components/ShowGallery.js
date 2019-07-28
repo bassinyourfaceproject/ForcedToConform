@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchPhotos, fetchVideos, fetchLyrics } from '../actions';
+import { fetchPhotos, fetchVideos, fetchLyrics, selectMedia } from '../actions';
 
 class ShowGallery extends React.Component {
 	componentDidMount() {
@@ -9,36 +9,45 @@ class ShowGallery extends React.Component {
 		this.props.fetchLyrics();
 	}
 
-	renderPhotos = () => {
-		if (this.props == null) {
-			return <div>Loading</div>;
-		}
-		return this.props.photos.map(photo => {
-			return (
-				<div key={photo.id} className="ui card">
-					<div className="image">
-						<img src={photo.acf.photo.url} />
-					</div>
-					<div className="content">
-						<div className="header">{photo.acf.description}</div>
-					</div>
-				</div>
-			);
-		});
-	};
-
 	render() {
-		console.log(this.props.selctedMedia);
-		return <div className="gallery-wrap">hi</div>;
+		const selectedMedia = this.props.selectedMedia;
+		if (selectedMedia === null) {
+			return null;
+		} else if (selectedMedia === 'Photo') {
+			return this.props.photos.map(photo => {
+				return (
+					<div key={photo.id} className="ui card">
+						<div className="image">
+							<img src={photo.acf.photo.url} alt={photo.acf.description} />
+						</div>
+						<div className="content">
+							<div className="header">{photo.acf.description}</div>
+						</div>
+					</div>
+				);
+			});
+		} else if (selectedMedia === 'Video') {
+			return this.props.videos.map(video => {
+				console.log(video);
+				return (
+					<div key={video.id} className="ui card">
+						<div className="image">
+							<iframe src={video.acf.videos} />
+						</div>
+					</div>
+				);
+			});
+		}
 	}
 }
 
 const mapToStateProps = state => {
-	// console.log(state.photos);
+	console.log(state.videos);
 	return {
 		photos: Object.values(state.photos),
 		videos: Object.values(state.videos),
-		lyrics: Object.values(state.lyrics)
+		lyrics: Object.values(state.lyrics),
+		selectedMedia: state.selectedMedia
 	};
 };
 
@@ -47,6 +56,7 @@ export default connect(
 	{
 		fetchPhotos,
 		fetchVideos,
-		fetchLyrics
+		fetchLyrics,
+		selectMedia
 	}
 )(ShowGallery);
