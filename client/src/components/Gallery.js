@@ -17,13 +17,12 @@ class Gallery extends React.Component {
 		}
 		return this.props.medias.map(media => {
 			return (
-				<li key={media.id} className="gallery-media">
-					<button
-						onClick={() => this.props.selectMedia(media)}
-						className="ui button primary"
-					>
-						{media}
-					</button>
+				<li
+					onClick={() => this.props.selectMedia(media.media)}
+					key={media.id}
+					className="gallery-media"
+				>
+					<img src={media.img} />
 				</li>
 			);
 		});
@@ -45,8 +44,12 @@ class Gallery extends React.Component {
 					<h2>
 						<span>Media</span>
 					</h2>
-					<ul className="gallery">{this.renderMedias()}</ul>
-					<ShowGallery />
+					<div className="ui container">
+						<ul className="gallery content-padding">{this.renderMedias()}</ul>
+						<div className="flex-container">
+							<ShowGallery />
+						</div>
+					</div>
 				</div>
 			</>
 		);
@@ -54,7 +57,7 @@ class Gallery extends React.Component {
 }
 
 const mapToStateProps = state => {
-	// console.log(state.selectedMedia);
+	console.log(state.medias);
 	return {
 		medias: state.medias,
 		selectedMedia: state.selectedMedia

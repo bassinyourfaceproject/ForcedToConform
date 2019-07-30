@@ -1,4 +1,5 @@
 import React from 'react';
+import ReadMoreReact from 'read-more-react';
 import { connect } from 'react-redux';
 import { fetchPhotos, fetchVideos, fetchLyrics, selectMedia } from '../actions';
 
@@ -16,12 +17,12 @@ class ShowGallery extends React.Component {
 		} else if (selectedMedia === 'Photo') {
 			return this.props.photos.map(photo => {
 				return (
-					<div key={photo.id} className="ui card">
-						<div className="image">
-							<img src={photo.acf.photo.url} alt={photo.acf.description} />
+					<div key={photo.id} className="photo-wrapper">
+						<div className="photo">
+							<img src={photo.acf.photo.url} />
 						</div>
-						<div className="content">
-							<div className="header">{photo.acf.description}</div>
+						<div className="photo-description-wrapper">
+							<div className="photo-description">{photo.acf.description}</div>
 						</div>
 					</div>
 				);
@@ -30,19 +31,34 @@ class ShowGallery extends React.Component {
 			return this.props.videos.map(video => {
 				console.log(video);
 				return (
-					<div key={video.id} className="ui card">
-						<div className="image">
-							<iframe src={video.acf.videos} />
+					<div key={video.id} className="video-wrapper">
+						<div className="video">
+							<iframe src={video.acf.video} allowfullscreen="true" />
+						</div>
+						<div className="video-description">{video.slug}</div>
+					</div>
+				);
+			});
+		} else if (selectedMedia === 'Lyric') {
+			return this.props.lyrics.map(lyric => {
+				return (
+					<div className="ui card">
+						<div className="content">
+							<div className="header">{lyric.acf.title}</div>
+							<div className="description">
+								<p>{lyric.acf.lyric}</p>
+							</div>
 						</div>
 					</div>
 				);
 			});
+		} else {
+			return <div>No content</div>;
 		}
 	}
 }
 
 const mapToStateProps = state => {
-	console.log(state.videos);
 	return {
 		photos: Object.values(state.photos),
 		videos: Object.values(state.videos),
